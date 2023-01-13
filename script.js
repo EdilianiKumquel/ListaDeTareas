@@ -15,3 +15,7 @@ const setDate = () => {
     dateMonth.textContent = date.toLocaleString('es', {month: 'short'});
     dateYear.textContent = date.toLocaleString('es', {year: 'numeric'});
 }
+
+const changeTaskState = event => {
+    event.target.classList.toggle('done');
+}

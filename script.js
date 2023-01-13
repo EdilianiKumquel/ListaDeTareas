@@ -14,13 +14,6 @@ const setDate = () => {
     dateText.textContent = date.toLocaleString('es', {weekday: 'long'});
     dateMonth.textContent = date.toLocaleString('es', {month: 'short'});
     dateYear.textContent = date.toLocaleString('es', {year: 'numeric'});
-<<<<<<< HEAD
-}
-
-const changeTaskState = event => {
-    event.target.classList.toggle('done');
-}
-=======
 };
 
 const addNewTask = event =>{
@@ -34,5 +27,8 @@ const addNewTask = event =>{
     event.target.reset();
 }
 
+const changeTaskState = event => {
+    event.target.classList.toggle('done');
+}
+
 setDate();
->>>>>>> develop

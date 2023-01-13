@@ -7,7 +7,7 @@
     <title>Lista de tareas</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script></script>
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
     <div class="list roundBorder">
@@ -15,11 +15,11 @@
             <div class="dateRight">
                 <div id="dateNumber"></div>
                 <div>
-                    <div class="dateMonth"></div>
-                    <div class="dateYear"></div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
                 </div>
             </div>
-            <div class="dateText"></div>
+            <div id="dateText"></div>
         </div>
         <form onsubmit="addNewTask(event)">
             <input type="text" name="taskText" autocomplete="off" placeholder="Nueva Tarea" class="roundBorder">
